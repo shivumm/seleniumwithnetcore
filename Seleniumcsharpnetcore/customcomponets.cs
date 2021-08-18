@@ -16,7 +16,6 @@ namespace Seleniumcsharpnetcore
             combobox.Clear();
             combobox.SendKeys("Almond");
             Driver.FindElement(By.XPath($"//div[@id='{comboelemement}-dropmenu']//li[text()='{value}']")).Click();
-            Console.WriteLine("Test1");
             Assert.Pass();
         }
     }
